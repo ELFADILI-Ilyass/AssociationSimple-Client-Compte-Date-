@@ -1,5 +1,7 @@
 
 #include "includes.h"
+#include "C_Courant.h"
+#include "C_Epargne.h"
 using namespace std;
 using namespace bank;
 
@@ -15,10 +17,19 @@ int main()
 	Client *client2 = Client::creeClient( "Ahmed", "Mohammed", compte2, date2);
 	Client *client3 = Client::creeClient("ELFADILI", "Ilyass", c3, date3);
 	Client* client4 = Client::creeClient( "Puth", "Charlie", Compte(1004, 7500.0, "GBP"), Date(5, 5, 1995));
+
 	client1->afficher();
 	client2->afficher();
 	client3->afficher();
 	client4->afficher();
+	C_Courant cc(2001, 1500.0, "USD", 3000.0);
+	C_Epargne ce(3001, 5000.0, "EUR", 0.05);
+	cc.afficher();
+	ce.afficher();
+	cc.debiter(2500);    // autorise (-500)   
+	ce.Debiter(3500);
+	cc.afficher();
+	ce.afficher();
 	delete client1,client2,client3;
 
     

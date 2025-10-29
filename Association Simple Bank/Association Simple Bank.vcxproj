@@ -126,11 +126,15 @@
     <ClCompile Include="Association Simple Bank.cpp" />
     <ClCompile Include="Client.cpp" />
     <ClCompile Include="Compte.cpp" />
+    <ClCompile Include="C_Courant.cpp" />
+    <ClCompile Include="C_Epargne.cpp" />
     <ClCompile Include="Date.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Client.h" />
     <ClInclude Include="Compte.h" />
+    <ClInclude Include="C_Courant.h" />
+    <ClInclude Include="C_Epargne.h" />
     <ClInclude Include="Date.h" />
     <ClInclude Include="includes.h" />
     <ClInclude Include="resource.h" />

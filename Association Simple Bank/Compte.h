@@ -6,7 +6,7 @@ namespace bank
 {
 	class Compte
 	{
-		private:
+		protected:
 		int numeroCompte;
 		double solde;
 		const string currency;
